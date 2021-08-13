@@ -1,0 +1,51 @@
+.container {
+    .heading{
+        color: black;
+        font-size: 2rem;
+        font-weight: 900;
+        font-family: 'Cormorant Garamond', serif;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .video-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .video{
+            height: 20rem;
+            width: 30rem;
+            margin: 2rem;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+            overflow: hidden;
+            border-radius:1rem;
+
+            video{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+            video:hover{
+                transition: .2s linear;
+                transform: scale(1.3);
+            }
+            .active{
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height: auto;
+                width: 80%;
+                box-shadow: 0 0 0 100vh rgba(0,0,0,0.7);
+                z-index: 1;
+            }
+            .active:hover{
+                transition: none;
+                transform: translate(-50%,-50%) scale(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.grid-pics{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20%;
+    grid-gap: 10px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.grid-pics > div{
+    height: 230px;
+    background-size:cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+text-decoration: none;
+color: yellow;
+}
+.grid-pics > div:nth-of-type(1){
+    grid-column: 1/3;
+}
+.grid-pics > div:nth-of-type(6){
+    grid-column: 3/5;
+}
+.grid-pics > div:nth-of-type(9){
+    grid-column: 3/5;
+}
+.grid-pics > div:nth-of-type(10){
+    grid-column: 1/3;
+}
+.grid-pics > div:nth-of-type(15){
+  grid-column: 3/5;
+}
+
+
+.bg-1{
+    background: url("../Images/engagement-2.jpg");
+}
+.bg-2{
+    background: url("../Images/candid-2.jpg");
+}
+.bg-3{
+  background: url("../Images/wed-2.jpg");
+}
+
+@media (max-width:650px){
+  .grid-pics{
+    margin-top: 40%;
+  }
+}
+
+@media (max-width:390px){ 
+  .grid-pics{
+    margin-top: 60%;
+  }
+
+  .grid-pics > div:nth-of-type(1){
+    grid-column: 1/3;
+}
+.grid-pics > div:nth-of-type(5){
+    grid-column: 2/5;
+}
+.grid-pics > div:nth-of-type(6){
+  grid-column: 1/3;
+}
+.grid-pics > div:nth-of-type(9){
+  grid-column: 1/5;
+}
+.grid-pics > div:nth-of-type(10){
+    grid-column: 1/3;
+}
+.grid-pics > div:nth-of-type(13){
+  grid-column: 1/2;
+}
+.grid-pics > div:nth-of-type(15){
+  grid-column: 3/5;
+}
+
+
+.bg-1{
+  background: url("../Images/lights-3.jpg");
+}
+.bg-2{
+  background: url("../Images/lights-3.jpg");
+}
+.bg-3{
+  background: url("../Images/lights-3.jpg");
+}
+}
+

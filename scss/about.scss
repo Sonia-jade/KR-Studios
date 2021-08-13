@@ -1,0 +1,32 @@
+.about{
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    max-height: 250px;
+    padding: 8%;
+    background-color:#fff;
+           
+    h3{
+        color: black;
+        font-size: 2rem;
+        font-family: 'Cormorant Garamond', serif;
+    }
+    p{
+        color: #444444;
+        font-size: 1.2rem;
+    }
+    h5 a{
+        border: 2px solid  #444444;
+        color: #444444;
+        padding: 14px 28px;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 900;
+        font-family: 'Cormorant Garamond', serif;
+    }
+    h5 a:hover{
+        text-decoration: none;
+        background-color:  #444444;
+        color: #fff;
+    }
+}
